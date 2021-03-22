@@ -64,7 +64,7 @@ p{
     .banner_image {
         background: url("App-development-1920-x-800.jpg") no-repeat top center;
         background-size: cover;
-        width: 100%;
+        max-width: 100%;
         height: 600px;
         display: flex;
         justify-content: center;
@@ -300,5 +300,26 @@ p{
       
     .footer-basic .social > a:hover {
         opacity:0.9;
+    }
+
+    @media (max-width: 768px){
+        .navbar{
+            height: auto;
+            flex-direction: column;
+        }
+
+        .navbar ul{
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .logo{
+            margin: 25px 0;
+        }
+
+        .banner_content{
+            margin-top: 10px;
+        }
+    
     }
       
